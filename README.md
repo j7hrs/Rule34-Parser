@@ -8,6 +8,9 @@ An Rule 34 Parser that uses [@kurozenzen's R34 API.](https://github.com/kurozenz
 ```
 pip install requests
 ```
+```
+pip install tqdm
+```
 2. Clone the folder somewhere
 3. Done!
 
