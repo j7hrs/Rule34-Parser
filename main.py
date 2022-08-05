@@ -10,7 +10,10 @@ while True:
     taggus = input('Download: ').replace(" | ", "+").replace(" ", "_")
     url = 'https://r34-json.herokuapp.com/posts?tags=' + taggus
     r = requests.get(url)
-    listamount = len(r.json()['posts']) - 1
+    listamount = len(r.json()['posts'])
+    if listamount == 0:
+        print("<!> Nothing was found, moving on...")
+        continue #finally bothered my lazy ass to fix the crashing whenever nothing was found
     data = r.json()['posts'][random.randint(0,listamount)]['file_url']
     print(data)
     print("Downloading...")
