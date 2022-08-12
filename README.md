@@ -6,9 +6,6 @@ An Rule 34 Parser that uses [@kurozenzen's R34 API.](https://github.com/kurozenz
 # Installation
 1. Open cmd.exe and enter the following:
 ```
-pip install requests
-```
-```
 pip install tqdm
 ```
 2. Clone the folder somewhere
